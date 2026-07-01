@@ -7,13 +7,30 @@ const message =
 "This feeling is new to me... and I don’t want to lose it.";
 
 let i = 0;
-function showLove() {
+function showLove() {function showLove() {
+    // existing codeopenBtn.addEventListener("click", function() {const music = document.getElementById("bgMusic");
+music.play();
+
+});
+}
   document.getElementById("text").innerHTML = "";
   i = 0;
   typeWriter();
 }
 
-function typeWriter() {
+function typeWriter() {function showLove() {openBtn.addEventListener("click", function() {
+
+});
+    // existing codeconst music = document.getElementById("bgMusic");
+music.play();function showLove() {
+
+    const music = document.getElementById("bgMusic");
+    music.play();
+
+    // Your existing code...
+    typeWriter();
+}
+}
   if (i < message.length) {
     document.getElementById("text").innerHTML += message.charAt(i);
     i++;

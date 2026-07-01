@@ -1,158 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>For ᥫ𝙗𝙡𝙪𝙧𝙗.3𝙧𝙧𝙮᭡ ❤️</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="style.css">
+    <title>For You ❤️</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 
 </head>
 
 <body>
 
-<audio id="music" loop>
-<source src="music.mp3" type="audio/mpeg">
-</audio>
+    <!-- Background -->
 
-<div id="stars"></div>
+    <div id="stars"></div>
+    <div id="particles"></div>
+    <div id="hearts"></div>
+    <div id="roses"></div>
 
-<div id="loader">
+    <!-- Music -->
 
-<div class="moon"></div>
+    <audio id="bgMusic" loop>
+        <source src="music.mp3" type="audio/mp3">
+    </audio>
 
-<h1>
-Someone Has
-A Letter For You...
-</h1>
+    <!-- Loading -->
 
-<p>Click below ❤️</p>
+    <div id="loader">
 
-<button id="startBtn">
+        <div class="loader-text">
+            Preparing Something Beautiful...
+        </div>
 
-Open Letter
+    </div>
 
-</button>
+    <!-- Music Button -->
 
-</div>
+    <button id="musicBtn">
 
-<section id="envelopePage">
+        <i class="fa-solid fa-volume-high"></i>
 
-<div class="envelope">
+    </button>
 
-<div class="cover"></div>
+    <!-- Envelope Section -->
 
-<div class="letter">
+    <section id="envelopeSection">
 
-<h2>Dear</h2>
+        <div class="moon"></div>
 
-<h1>
+        <div class="envelope">
 
-ᥫ𝙗𝙡𝙪𝙧𝙗.3𝙧𝙧𝙮᭡
+            <div class="cover"></div>
 
-</h1>
+            <div class="letter">
 
-<p id="typing"></p>
+                <h2>To</h2>
 
-<button id="next">
+                <h1>
+                    ᥫ𝙗𝙡𝙪𝙧𝙗.3𝙧𝙧𝙮᭡
+                </h1>
 
-Continue ❤️
+                <p>
+                    Click To Open
+                </p>
 
-</button>
+            </div>
 
-</div>
+        </div>
 
-</div>
+    </section>
 
-</section>
+    <!-- Main -->
 
-<section id="proposal">
+    <main id="mainContent">
 
-<div class="glass">
+        <!-- Hero -->
 
-<h1 class="glow">
+        <section class="hero">
 
-Will You Give Me
+            <h3 class="small">
+                Every Story Begins Somewhere...
+            </h3>
 
-A Chance?
+            <h1 class="title">
 
-</h1>
+                Maybe
 
-<p>
+                <span>You</span>
 
-You don't know me.
+                Are Mine.
 
-I don't know everything about you.
+            </h1>
 
-Yet...
+            <p class="subtitle">
 
-My heart somehow found yours.
+                Sometimes we don't need years to admire someone.
 
-Maybe this is the beginning of a beautiful story.
+                Sometimes...
 
-</p>
+                One person silently changes everything.
 
-<div class="buttons">
+            </p>
 
-<button id="yes">
+        </section>
 
-YES ❤️
+        <!-- Letter -->
 
-</button>
+        <section class="glass">
 
-<button id="later">
+            <h2>
 
-I Need More Time 🤍
+                Dear
 
-</button>
+                <span>
+                    ᥫ𝙗𝙡𝙪𝙧𝙗.3𝙧𝙧𝙮᭡
+                </span>
 
-</div>
+            </h2>
 
-</div>
+            <div id="typingText"></div>
 
-</section>
+        </section>
 
-<section id="final">
+        <!-- Quote -->
 
-<h1>
+        <section class="quote">
 
-Thank You...
+            <h2>
 
-</h1>
+                "If I could become a single tear...
 
-<h2>
+                I would choose to be born in your eyes,
 
-ᥫ𝙗𝙡𝙪𝙧𝙗.3𝙧𝙧𝙮᭡
+                travel across your smile,
 
-</h2>
+                and disappear upon your lips,
 
-<p>
+                because every part of you feels like home."
 
-No matter what your answer is...
+            </h2>
 
-Thank you for existing.
+        </section>
 
-You unknowingly became
+        <!-- Promise -->
 
-one of the most beautiful chapters
+        <section class="glass promises">
 
-my heart has ever written.
+            <h2>
 
-❤️
+                My Promise
 
-</p>
+            </h2>
 
-</section>
+            <div class="cards">
 
-<div id="hearts"></div>
+                <div class="card">
 
-<div id="petals"></div>
+                    <i class="fa-solid fa-heart"></i>
 
-<div id="fireworks"></div>
+                    <h3>Care</h3>
 
-<script src="script.js"></script>
+                    <p>
+
+                        I'll always care about your happiness.
+
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <i class="fa-solid fa-hand-holding-heart"></i>
+
+                    <h3>Support</h3>
+
+                    <p>
+
+                        I'll stay beside you during your hardest moments.
+
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <i class="fa-solid fa-star"></i>
+
+                    <h3>Respect</h3>
+
+                    <p>
+
+                        I'll respect your dreams, your space, and your heart.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Final -->
+
+        <section class="proposal">
+
+            <h1>
+
+                Will You
+
+                Give Me
+
+                A Chance
+
+                To Know You?
+
+            </h1>
+
+            <div class="buttons">
+
+                <button id="yesBtn">
+
+                    ❤️ Yes
+
+                </button>
+
+                <button id="noBtn">
+
+                    💔 Not Yet
+
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- Hidden Message -->
+
+        <section id="hiddenMessage">
+
+            <h1>
+
+                ❤️
+
+            </h1>
+
+            <h2>
+
+                Thank You...
+
+            </h2>
+
+            <p>
+
+                Whether your answer is today,
+
+                tomorrow,
+
+                or never...
+
+                Thank you for reading this.
+
+                Meeting someone as wonderful as you,
+
+                even from a distance,
+
+                already feels like a beautiful memory.
+
+            </p>
+
+        </section>
+
+        <!-- Footer -->
+
+        <footer>
+
+            Made with ❤️
+
+            <br>
+
+            By
+
+            <span>
+
+                Amjad
+
+            </span>
+
+        </footer>
+
+    </main>
+
+    <!-- JS -->
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>

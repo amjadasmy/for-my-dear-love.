@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  color: white;
+}
+
+.container {
+  text-align: center;
+  position: relative;
+  top: 20%;
+}
+
+.name {
+  font-size: 40px;
+  color: #ff4d6d;
+  text-shadow: 0 0 20px #ff4d6d;
+}
+
+.card {
+  width: 70%;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(255,255,255,0.1);
+  box-shadow: 0 0 20px rgba(255,77,109,0.4);
+  min-height: 120px;
+}
+
+button {
+  padding: 12px 25px;
+  border: none;
+  background: #ff4d6d;
+  color: white;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff1e4d;
+  transform: scale(1.05);
+}
+
+/* Floating hearts */
+.heart {
+  position: absolute;
+  color: #ff4d6d;
+  font-size: 20px;
+  animation: float 6s linear infinite;
+}
+
+@keyframes float {
+  0% {transform: translateY(100vh) scale(0);}
+  100% {transform: translateY(-10vh) scale(1.5);}
+}

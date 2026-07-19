@@ -1,0 +1,54 @@
+const message = `My Dearest Ruska ❤️
+
+From the moment you came into my life, everything became more beautiful.
+
+I don't promise a perfect life, but I promise I will always try my best to make you happy.
+
+I will stand beside you in your happiest moments and your hardest days.
+
+Your smile means a lot to me, and I hope I can always be a reason behind it.
+
+Thank you for being a special part of my life.
+
+Forever yours ❤️`;
+
+let index = 0;
+
+function showMessage() {
+    const textBox = document.getElementById("message");
+    textBox.innerHTML = "";
+    index = 0;
+
+    function typeEffect() {
+        if (index < message.length) {
+            textBox.innerHTML += message[index]
+                .replace(/\n/g, "<br>");
+            index++;
+            setTimeout(typeEffect, 35);
+        }
+    }
+
+    typeEffect();
+}
+
+
+// Soft floating hearts effect
+function createHeart(){
+
+    const heart = document.createElement("div");
+
+    heart.className = "floating-heart";
+    heart.innerHTML = "❤️";
+
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = (12 + Math.random() * 18) + "px";
+    heart.style.animationDuration = (5 + Math.random() * 5) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(()=>{
+        heart.remove();
+    },8000);
+}
+
+setInterval(createHeart, 1800);

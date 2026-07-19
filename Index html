@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Ruska ❤️</title>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Great+Vibes&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    background:
+    radial-gradient(circle at top,#193b70,#050b1f 60%);
+    color:white;
+}
+
+
+/* Soft stars */
+
+.star{
+    position:absolute;
+    width:4px;
+    height:4px;
+    background:white;
+    border-radius:50%;
+    opacity:.5;
+    animation:twinkle 5s infinite;
+}
+
+@keyframes twinkle{
+    50%{
+        opacity:.1;
+        transform:scale(.5);
+    }
+}
+
+
+.container{
+    width:90%;
+    max-width:650px;
+    text-align:center;
+    z-index:2;
+}
+
+
+h1{
+    font-family:'Great Vibes',cursive;
+    font-size:70px;
+    color:#8ecbff;
+    text-shadow:0 0 20px #4da6ff;
+    animation:glow 3s infinite;
+}
+
+
+@keyframes glow{
+    50%{
+        text-shadow:0 0 40px #7ac7ff;
+    }
+}
+
+
+
+.card{
+
+    margin-top:30px;
+    padding:35px;
+
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.2);
+    border-radius:25px;
+
+    backdrop-filter:blur(10px);
+
+    box-shadow:
+    0 0 30px rgba(0,150,255,.2);
+
+    font-size:18px;
+    line-height:1.8;
+
+    display:none;
+
+}
+
+
+#text{
+    white-space:pre-line;
+}
+
+
+
+button{
+
+    margin-top:30px;
+
+    padding:14px 40px;
+
+    border:none;
+    border-radius:40px;
+
+    background:#4da6ff;
+    color:white;
+
+    font-size:18px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.5s;
+
+    box-shadow:0 0 20px #4da6ff;
+
+}
+
+
+button:hover{
+
+    transform:scale(1.08);
+
+}
+
+
+
+.fade{
+
+animation:fade 2s ease;
+
+}
+
+
+@keyframes fade{
+
+from{
+opacity:0;
+transform:translateY(30px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+
+<div class="container">
+
+
+<h1>❤️ Ruska ❤️</h1>
+
+
+<div class="card fade" id="card">
+
+<p id="text"></p>
+
+</div>
+
+
+<button onclick="showMessage()">
+Open My Heart 💙
+</button>
+
+
+</div>
+
+
+
+<script>
+
+
+const message = `My Dearest Ruska ❤️
+
+
+From the moment you came into my life, everything became more beautiful.
+
+
+I don't promise a perfect life, but I promise I will always try my best to make you happy.
+
+
+I will stand beside you in your happiest moments and your hardest days.
+
+
+Your smile means a lot to me, and I hope I can always be a reason behind it.
+
+
+Thank you for being a special part of my life.
+
+
+Forever yours ❤️`;
+
+
+
+let index=0;
+
+
+function showMessage(){
+
+document.getElementById("card").style.display="block";
+
+
+let text=document.getElementById("text");
+
+
+text.innerHTML="";
+
+
+index=0;
+
+
+function typing(){
+
+if(index < message.length){
+
+text.innerHTML += message.charAt(index);
+
+index++;
+
+setTimeout(typing,45);
+
+}
+
+}
+
+
+typing();
+
+
+}
+
+
+
+
+// create small stars
+
+for(let i=0;i<35;i++){
+
+let star=document.createElement("div");
+
+star.className="star";
+
+star.style.left=Math.random()*100+"%";
+
+star.style.top=Math.random()*100+"%";
+
+star.style.animationDelay=Math.random()*5+"s";
+
+document.body.appendChild(star);
+
+}
+
+
+</script>
+
+
+
+<!-- Background Music -->
+
+<script src="https://elfsightcdn.com/platform.js" async></script>
+
+<div class="elfsight-app-fce16c1c-5f73-4e28-84b7-eaa9d99a73de" data-elfsight-app-lazy></div>
+
+
+</body>
+</html>

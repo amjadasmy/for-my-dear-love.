@@ -1,12 +1,26 @@
+const name = "Ruska";
+
 const message = 
-"I don’t know you yet, and maybe you don’t know me... " +
-"but something in me feels like I should say this. " +
-"I will stand for you even in your lowest moments. " +
-"I will never let you feel alone if life gets heavy. " +
-"I wish I could be one of your tears, so I could be born in your eyes and die on your lips. " +
-"This feeling is new to me... and I don’t want to lose it.";
+`My Dearest ${name} ❤️
+
+I don't know what the future holds, but I know one thing...
+
+I will always do my best to make you happy and keep a smile on your face.
+
+I promise I will never let you down. No matter how difficult life becomes, I will stand beside you, support you, and give you my strength.
+
+I will be there in your happiest moments and also in your hardest days. You will never have to feel alone when I am with you.
+
+I want to protect your heart, respect your dreams, and be someone you can always trust.
+
+This feeling I have for you is special, and I don't want to lose it.
+
+You are someone I truly care about, Ruska ❤️
+
+Forever with you 💖`;
 
 let i = 0;
+
 function showLove() {
   document.getElementById("text").innerHTML = "";
   i = 0;

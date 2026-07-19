@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#06152f;
+    color:white;
+    overflow:hidden;
+}
+
+
+.container{
+    width:90%;
+    max-width:650px;
+    text-align:center;
+}
+
+
+h1{
+    font-size:45px;
+    color:#d6ecff;
+    margin-bottom:25px;
+    font-weight:500;
+}
+
+
+.card{
+
+    background:#0b2345;
+    border-radius:15px;
+    padding:30px;
+
+    color:#e8f3ff;
+
+    font-size:17px;
+    line-height:1.8;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.4);
+
+    display:none;
+
+    animation:show 1.5s ease;
+
+}
+
+
+@keyframes show{
+
+from{
+    opacity:0;
+    transform:translateY(20px);
+}
+
+to{
+    opacity:1;
+    transform:translateY(0);
+}
+
+}
+
+
+button{
+
+    margin-top:25px;
+
+    padding:12px 35px;
+
+    border:none;
+    border-radius:30px;
+
+    background:#2d6cdf;
+
+    color:white;
+
+    font-size:17px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+button:hover{
+
+    background:#4b8cff;
+
+}
+
+
+.heart{
+
+    position:absolute;
+
+    color:#7fb7ff;
+
+    opacity:.3;
+
+    animation:move 10s linear infinite;
+
+}
+
+
+@keyframes move{
+
+from{
+    transform:translateY(100vh);
+}
+
+to{
+    transform:translateY(-100vh);
+}
+
+}
